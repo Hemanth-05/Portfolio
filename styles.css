@@ -1,0 +1,430 @@
+/* Utility Classes */
+
+/* 1.For Bouncing  the image */
+.bounce{
+
+    animation: bounce 1s forwards ease-out;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+@keyframes bounce{
+    0%{transform: translateY(-250px);}
+    20%, 60%, 100%{transform: translateY(0);opacity: 1;}
+    40%{transform: translateY(-8vh);}
+    80%{transform: translateY(-2vh);}
+}
+
+/* 2.Fadein Animation for text*/
+.fadeInLeft{
+    transform: translateX(-50px);
+    opacity: 0;
+    animation: fadeInLeft 1s forwards ease-out;
+    animation-delay: 0.2s;
+}
+@keyframes fadeInLeft{
+    0%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fadeInRight{
+    transform: translateX(50px);
+    opacity: 0;
+    animation: fadeInRight 1s forwards ease-out;
+    animation-delay: 0.5s;
+}
+@keyframes fadeInRight{
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fadeInFromBottom{
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeInFromBottom 1s forwards ease-out;
+    animation-delay: 0.8s;
+}
+@keyframes fadeInFromBottom{
+    0%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* 3.Fadein Animation for Projects */
+
+.fadeIn{
+    scale: 0.8;
+    opacity: 0;
+    animation: fadeInProject linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+}
+@keyframes fadeInProject {
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+/* 4.Fadein Animation for Skills */
+.fadeInFromLeft{
+    animation: fadeInFromLeft linear forwards;
+    animation-timeline: view(70vh 10vh);
+    opacity: 0;
+}
+@keyframes fadeInFromLeft{
+    0%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fadeInFromRight{
+    animation: fadeInFromRight linear forwards;
+    animation-timeline: view(70vh 10vh);
+    opacity: 0;
+}
+@keyframes fadeInFromRight{
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* 5.General classes */
+.bold{
+    font-weight: 600 !important;
+}
+
+.subHeading{
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+a{
+    color: black;
+}
+
+
+
+
+/* Utility Class Ends Here */
+
+html{
+    font-size: 15px;
+}
+
+body{
+    background-color: #F6F5F2;
+}
+
+.introMainDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #240750;
+    width: 100%;
+    height: 70vh;
+}
+
+.introSubDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Garamond;
+}
+
+.navigationBar{
+    z-index: 2;
+    position: fixed;
+    top: 2vh;
+    background-color: #f3efef;
+    opacity: 0.98;
+    color: black;
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navItem{
+    text-decoration: none;
+}
+
+.navItems{
+    padding:5px 15px 5px 15px;
+    border-radius: 10%;
+}
+
+.navItems:hover{
+    background-color: #eee7e7;
+}
+
+.introSubDiv > img{
+
+    margin-top: 22vh;
+    margin-bottom: 20px;
+}
+
+.introSubDiv > h5{
+    font-size: 1em;
+    align-self: start;
+    word-spacing: 4px;
+    letter-spacing: 2px;   
+}
+
+.introSubDiv > h2{
+    font-size: 3em;
+    word-spacing: 8px;
+    letter-spacing: 4px;
+}
+
+.introSubDiv > h6{
+    word-spacing: 6px;
+    letter-spacing: 3px;
+}
+
+.myPic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+.whiteSpaceDiv{
+    width: 100%;
+    height: 30vh;
+}
+
+.websiteContainer{
+    width: 70%;
+}
+
+.myProjectsDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 10vh;
+}
+
+.myProjectsDiv>h3{
+    font-family: Garamond;
+}
+
+.project{
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    background-color: #F0EBE3;
+    border-radius: 1.5%;
+}
+
+.project:hover{
+    background-color: #e2dcd0;
+}
+
+.project>.leftSide{
+    width:47.5%;
+    padding: 20px;
+    padding-top: 5%;
+}
+
+.project>.leftSide>p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    font-weight: 300;
+}
+
+.project>.rightSide{
+    width:47.5%;
+    overflow: hidden;
+}
+
+.projectImage{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    border-radius: 1.2%;
+    box-shadow: -1px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.moveLeft{
+    left: 15px;
+}
+
+.skillsContainer{
+    margin-bottom: 10vh;
+}
+
+.skillDisplay{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+    row-gap: 20px;
+}
+
+.skill{
+    background: linear-gradient(to right, #E3E1D9, #F2EFE5);
+    width: 22%;
+    height: 100px;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.educationDisplay{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ddebeb;
+    border-radius: 1.5%;
+    width: 70%;
+    height: 40vh;
+}
+
+.educationContent{
+    line-height: 25px;
+    max-height: 60%;
+}
+
+.gnitlogo{
+    border-radius: 2%;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.bullet{
+    list-style-type: square;
+}
+
+.contactMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+}
+
+.footerHeading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1200px){
+    .project>.rightSide{
+        display: none;
+    }
+
+    .project>.leftSide{
+        width: 100%;
+    }
+
+    .project{
+        min-height: 0vh;
+    }
+}
+
+@media (max-width: 992px){
+    .educationDisplay{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 767px){
+    .introMainDiv{
+        height: 100vh;
+    }
+    .whiteSpaceDiv{
+        height: 10vh;
+    }
+    .introSubDiv > img{
+
+        margin-top: 40vh;
+    }
+    .navigationBar{
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .introSubDiv > h2{
+        font-size: 2em;
+    }
+
+    .gnitlogo{
+        width: 100px;
+        height: 100px;
+    }
+
+    .educationDisplay{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-height: 10vh;
+    }
+}
+
+
+@media (max-width: 576px){
+    body{
+        font-size: 10px ;
+    }
+    
+    .introSubDiv > h6{
+        font-size: smaller;
+    }
+
+    .skill{
+        width: 100%;
+        height: 30px;
+        border: 1px solid black;
+    }
+
+    .skillDisplay{
+        row-gap: 5px;
+    }
+}
+
+
+
+
