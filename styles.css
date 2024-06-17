@@ -1,112 +1,114 @@
 /* Utility Classes */
 
 /* 1.For Bouncing  the image */
-.bounce{
+@media (prefers-reduced-motion: no-preference){
+    .bounce{
 
-    animation: bounce 1s forwards ease-out;
-    animation-delay: 1.5s;
-    opacity: 0;
-}
-@keyframes bounce{
-    0%{transform: translateY(-250px);}
-    20%, 60%, 100%{transform: translateY(0);opacity: 1;}
-    40%{transform: translateY(-8vh);}
-    80%{transform: translateY(-2vh);}
-}
+        animation: bounce 1s forwards ease-out;
+        animation-delay: 1.5s;
+        opacity: 0;
+    }
+    @keyframes bounce{
+        0%{transform: translateY(-250px);}
+        20%, 60%, 100%{transform: translateY(0);opacity: 1;}
+        40%{transform: translateY(-8vh);}
+        80%{transform: translateY(-2vh);}
+    }
 
-/* 2.Fadein Animation for text*/
-.fadeInLeft{
-    transform: translateX(-50px);
-    opacity: 0;
-    animation: fadeInLeft 1s forwards ease-out;
-    animation-delay: 0.2s;
-}
-@keyframes fadeInLeft{
-    0%{
+    /* 2.Fadein Animation for text*/
+    .fadeInLeft{
         transform: translateX(-50px);
+        opacity: 0;
+        animation: fadeInLeft 1s forwards ease-out;
+        animation-delay: 0.2s;
     }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
+    @keyframes fadeInLeft{
+        0%{
+            transform: translateX(-50px);
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
-}
 
-.fadeInRight{
-    transform: translateX(50px);
-    opacity: 0;
-    animation: fadeInRight 1s forwards ease-out;
-    animation-delay: 0.5s;
-}
-@keyframes fadeInRight{
-    0%{
+    .fadeInRight{
         transform: translateX(50px);
+        opacity: 0;
+        animation: fadeInRight 1s forwards ease-out;
+        animation-delay: 0.5s;
     }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
+    @keyframes fadeInRight{
+        0%{
+            transform: translateX(50px);
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
-}
 
-.fadeInFromBottom{
-    transform: translateY(50px);
-    opacity: 0;
-    animation: fadeInFromBottom 1s forwards ease-out;
-    animation-delay: 0.8s;
-}
-@keyframes fadeInFromBottom{
-    0%{
+    .fadeInFromBottom{
         transform: translateY(50px);
+        opacity: 0;
+        animation: fadeInFromBottom 1s forwards ease-out;
+        animation-delay: 0.8s;
     }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
+    @keyframes fadeInFromBottom{
+        0%{
+            transform: translateY(50px);
+        }
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
-}
 
-/* 3.Fadein Animation for Projects */
+    /* 3.Fadein Animation for Projects */
 
-.fadeIn{
-    scale: 0.8;
-    opacity: 0;
-    animation: fadeInProject linear forwards;
-    animation-timeline: view();
-    animation-range: entry;
-}
-@keyframes fadeInProject {
-    to{
-        scale: 1;
-        opacity: 1;
+    .fadeIn{
+        scale: 0.8;
+        opacity: 0;
+        animation: fadeInProject linear forwards;
+        animation-timeline: view();
+        animation-range: entry;
     }
-}
+    @keyframes fadeInProject {
+        to{
+            scale: 1;
+            opacity: 1;
+        }
+    }
 
-/* 4.Fadein Animation for Skills */
-.fadeInFromLeft{
-    animation: fadeInFromLeft linear forwards;
-    animation-timeline: view(70vh 10vh);
-    opacity: 0;
-}
-@keyframes fadeInFromLeft{
-    0%{
-        transform: translateX(-50px);
+    /* 4.Fadein Animation for Skills */
+    .fadeInFromLeft{
+        animation: fadeInFromLeft linear forwards;
+        animation-timeline: view(70vh 10vh);
+        opacity: 0;
     }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
+    @keyframes fadeInFromLeft{
+        0%{
+            transform: translateX(-50px);
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
-}
 
-.fadeInFromRight{
-    animation: fadeInFromRight linear forwards;
-    animation-timeline: view(70vh 10vh);
-    opacity: 0;
-}
-@keyframes fadeInFromRight{
-    0%{
-        transform: translateX(50px);
+    .fadeInFromRight{
+        animation: fadeInFromRight linear forwards;
+        animation-timeline: view(70vh 10vh);
+        opacity: 0;
     }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
+    @keyframes fadeInFromRight{
+        0%{
+            transform: translateX(50px);
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
 }
 
