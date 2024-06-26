@@ -276,6 +276,15 @@ body{
     box-shadow: -1px 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.linkButton{
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn{
+    width: 40%;
+}
+
 .moveLeft{
     left: 15px;
 }
@@ -348,6 +357,34 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.resumeSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerButton{
+    min-width: 150px;
+    min-height: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+}
+
+.footerButton:hover{
+    transform: scale(1.05);
+}
+
+.viewButton{
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.downloadButton{
+    background-color: #d6c4c4;
+}
+
+
 
 
 /* Media Queries */
@@ -424,6 +461,12 @@ body{
 
     .skillDisplay{
         row-gap: 5px;
+    }
+
+    .resumeSection{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
 
