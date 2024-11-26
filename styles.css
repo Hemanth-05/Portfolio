@@ -185,6 +185,20 @@ body{
     background-color: #eee7e7;
 }
 
+.disabled {
+    pointer-events: none; /* Disable all interactions */
+    opacity: 0.5; /* Make it look disabled */
+}
+
+.disabled:hover {
+    cursor: not-allowed; /* Ensure the cursor changes on hover */
+}
+
+.under-progress{
+    color:red;
+}
+
+
 .introSubDiv > img{
 
     margin-top: 22vh;
@@ -316,34 +330,46 @@ body{
 .education{
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to right, #dfdbcf, #F2EFE5);
+    padding: 20px;
     align-items: center;
-    margin-bottom: 10vh;
 }
 
-.educationDisplay{
+.education-content{
     display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #ddebeb;
-    border-radius: 1.5%;
-    width: 70%;
-    height: 40vh;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
 }
 
-.educationContent{
-    line-height: 25px;
-    max-height: 60%;
+.education-class{
+    display: flex;
 }
 
-.gnitlogo{
-    border-radius: 2%;
-    margin: 20px;
-    width: 200px;
-    height: 200px;
+.education-class-left{
+    display: flex;
+    justify-content: center;
+    width: 50%;
 }
 
-.bullet{
-    list-style-type: square;
+.education-class-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.education-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.jntuhlogo{
+    height: 220px;
+}
+
+.uncclogo{
+    height: 170px;
 }
 
 .contactMe{

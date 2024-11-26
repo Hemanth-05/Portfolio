@@ -31,22 +31,7 @@
     <div class = "websiteContainer container">
         <div id = "projects" class = "myProjectsDiv">
             <h3 class>My Projects</h3>
-            <div class = "project fadeIn project1 disabled">
-                <div class = "leftSide disabled">
-                    <h4 class = "under-progress">!!! UNDER PROGRESS</h4>
-                     <h4>E-Commerce Cricket Website</h4>
-                     <p class = "bold">Major Technologies Used: NodeJS, ExpressJS</p>
-                     <p>Welcome to our Blog website! Powered by HTML, CSS, and JavaScript for the frontend, and Node.js with Express.js 
-                        for the backend, our platform offers users a seamless experience to view, edit, delete, and create posts. 
-                        With intuitive user interfaces and robust backend functionality, our website provides a user-friendly environment 
-                        for managing and sharing content effortlessly. </p>
-                     <a class = "linkButton" href="https://github.com/AjayS2023/Cricket-Ecommerce-Website" target="_blank"> <button type="button" class="btn btn-light" disabled> <i class="fa fa-folder"></i> Code </button> </a>
-                </div>
-                <div class = "rightSide">
-                    <img class = "projectImage disabled" src="Photos/ECOMProj.png" alt="Blog Website">
-                </div>
-            </div>
-            <div class = "project fadeIn project2">
+            <div class = "project fadeIn project1">
                 <div class = "leftSide">
                      <h4>Blog Website</h4>
                      <p class = "bold">Major Technologies Used: NodeJS, ExpressJS</p>
@@ -60,7 +45,7 @@
                     <img class = "projectImage" src="Photos/Project1.png" alt="Blog Website">
                 </div>
             </div>
-            <div class = "project fadeIn project3">
+            <div class = "project fadeIn project2">
                 <div class = "leftSide">
                     <h4>Todo List</h4>
                     <p class = "bold">Major Technologies Used: HTML, CSS, JS</p>
@@ -73,7 +58,7 @@
                     <img class = "projectImage" src="Photos/Project2.png" alt="Todo List">
                 </div>
             </div>
-            <div class = "project fadeIn project4">
+            <div class = "project fadeIn project3">
                 <div class = "leftSide">
                     <h4>GPA Calculator</h4>
                     <p class = "bold">Major Technologies Used: HTML, Bootstrap, JS </p>
@@ -86,7 +71,7 @@
                     <img class = "projectImage" src="Photos/Project3.png" alt="GPA Calculator">
                 </div>
             </div>
-            <div class = "project fadeIn project5">
+            <div class = "project fadeIn project4">
                 <div class = "leftSide">
                     <h4>Project Pubg</h4>
                     <p class = "bold">Major Technologies Used: HTML and CSS</p>
@@ -123,35 +108,18 @@
             </div>
         </div>
 
-       <div class = "education">
-        <h3>Education</h3>
-        <div class = "education-content">
-            <div class = "education-class education-class-btech">
-                <div class = "education-class-left">
-                    <img src="Photos/JNTUH Logo.png" class = "university-logo jntuhlogo" alt="College Logo">
-                </div>
-
-                <div class = "education-class-right">
+        <div id = "education" class = "education">
+            <h3 class = "subHeading">Education</h3>
+            <div class = "educationDisplay">
+                <img src="Photos/GNIT Logo.jpg" class = "gnitlogo" alt="">
+                <div class = "educationContent">
                     <h5>Bachelors of Technology</h5>
-                    <p>Jawaharlal Nehru Technological University Hyderabad</p>
+                    <p>Guru Nanak Istitute of Technology</p>
                     <p>Graduated in 2022</p>
                     <li class = "bullet">Major in Computer Science Engineering</li>
                 </div>
             </div>
-            <div class = "education-class education-class-masters">
-                <div class = "education-class-left">
-                    <img src="Photos/UNCC Logo.png" class = "university-logo uncclogo" alt="College Logo">
-                </div>
-
-                <div class = "education-class-right">
-                    <h5>Master of Science in Computer Science</h5>
-                    <p>University of North Carolina at Charlotte</p>
-                    <p>Class 0f 2026</p>
-                <li class = "bullet">Major in Computer Science</li>
-                </div>
-            </div>
         </div>
-       </div>
 
         <div id = "contact" class = "contactMe">
             <h3 class = "footerHeading">Contact Me</h3>
@@ -172,3 +140,61 @@
     <script src="index.js"></script>
 </body>
 </html>
+
+
+
+
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.educationDisplay{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #e2dcd0;
+    border-radius: 1.5%;
+    width: 70%;
+    height: 40vh;
+}
+
+.educationContent{
+    line-height: 25px;
+    max-height: 60%;
+}
+
+.gnitlogo{
+    border-radius: 2%;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.bullet{
+    list-style-type: square;
+}
+
+
+
+
+
+
+
+<img src="Photos/JNTUH Logo.png" class = "university-logo jntuhlogo" alt="College Logo">
+                <div class = "education-details education-details-btech">
+                    <h5>Bachelors of Technology</h5>
+                    <p>Jawaharlal Nehru Technological University Hyderabad</p>
+                    <p>Graduated in 2022</p>
+                    <li class = "bullet">Major in Computer Science Engineering</li>
+                </div>
+
+<img src="Photos/UNCC Logo.png" class = "university-logo uncclogo" alt="College Logo">
+                <div class = "education-details education-details-masters">
+                    <h5>Masters in Computer Science</h5>
+                    <p>University of North Carolina at Charlotte</p>
+                    <p>2024 - Present</p>
+                <li class = "bullet">Major in Computer Science Engineering</li>
+                </div>
