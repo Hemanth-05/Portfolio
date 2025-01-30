@@ -472,6 +472,15 @@ body{
 
 
 @media (max-width: 576px){
+    .container{
+        width: 90%;
+    }
+    .jntuhlogo{
+        height: 120px;
+    }
+    .uncclogo{
+        height: 70px;
+    }
     body{
         font-size: 10px ;
     }
