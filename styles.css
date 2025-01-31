@@ -365,11 +365,11 @@ body{
 }
 
 .jntuhlogo{
-    height: 220px;
+    height: 200px;
 }
 
 .uncclogo{
-    height: 170px;
+    height: 150px;
 }
 
 .contactMe{
@@ -434,6 +434,18 @@ body{
     .educationDisplay{
         width: 100%;
     }
+    .container{
+        width: 85%;
+    }
+    .jntuhlogo{
+        height: 140px;
+    }
+    .uncclogo{
+        height: 80px;
+    }
+    .skill3{
+        font-size: 1.2em;
+    }
 }
 
 
@@ -467,6 +479,10 @@ body{
         align-items: center;
         width: 100%;
         min-height: 10vh;
+    }
+
+    .skill3{
+        font-size: 1.1em;
     }
 }
 
